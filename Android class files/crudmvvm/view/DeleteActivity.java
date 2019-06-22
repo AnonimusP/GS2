@@ -49,13 +49,6 @@ public class DeleteActivity extends AppCompatActivity {
         editGenre.setText(object.get("Genre").getAsString());
         editPlatform.setText(object.get("Platform").getAsString());
         editPrice.setText(object.get("Price").getAsString());
-        /*editName.setText(cursor.getString(1));
-        editRelease.setText(cursor.getString(2));
-        editGenre.setText(cursor.getString(3));
-        editPlatform.setText(cursor.getString(4));
-        editPrice.setText(cursor.getString(5));*/
-        //}catch (Exception e) {Toast.makeText(this, "Brak takiego rekordu w bazie", Toast.LENGTH_LONG).show();
-        //this.finish();}
     }
     public void SendDeleteRecordToVM(View view){
         mViewModel.idg = bundle.getString("id");
